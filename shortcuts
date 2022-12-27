@@ -1,0 +1,27 @@
+mkdir dist
+mkdir dist/css
+mkdir dist/img
+mkdir src
+touch dist/index.html
+touch src/input.css
+
+npm install -D tailwindcss
+npx tailwindcss init
+npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch
+
+----tailwind.config.js----
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./dist/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+----end----
+
+----input.css----
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+----end----
