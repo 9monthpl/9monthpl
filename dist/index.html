@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+</head>
+<body class="text-gray-800 antialiased">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-main-part">
+                <a class="nav-main-text" href="#">
+                    ☎️ Phone Transfer
+                </a>
+                <button class="nav-main-button" type="button" onclick="toggleNavbar('collapse-navbar')">
+                    <i class="text-white fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="lg:flex flex-grow nav-link-container hidden" id="collapse-navbar">
+                <ul class="nav-links mr-auto">
+                    <li class="flex items-center">
+                        <a class="nav-ico-links" href="#">
+                            <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+                            Docs
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="nav-ico-links" href="#">
+                            <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+                            Docs
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-links lg:ml-auto">
+                    <li class="flex items-center">
+                        <a class="nav-ico-links" href="#pablo">
+                            <i class="lg:text-gray-300 text-gray-500 fa-regular fa-envelope text-lg leading-lg"></i>
+                            <span class="lg:hidden inline-block ml-2">Mail</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="white-button text-xs" type="button" href="/login.html">
+                            <i class="fas fa-arrow-alt-circle-down"></i>
+                            Buy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="./js/end.js"></script>
+</body>
+</html>

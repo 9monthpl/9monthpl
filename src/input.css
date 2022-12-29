@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  nav {
+    @apply fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-1 bg-gray-600;
+  }
+  .nav-container {
+    @apply container px-4 mx-auto flex flex-wrap items-center justify-between;
+  }
+  .nav-main-part {
+    @apply w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start;
+  }
+  .nav-main-text {
+    @apply text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white;
+  }
+  .nav-main-button {
+    @apply cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none;
+  }
+  .nav-link-container {
+    @apply items-center bg-white lg:bg-transparent lg:shadow-none;
+  }
+  .nav-links {
+    @apply flex flex-col lg:flex-row list-none
+  }
+  .nav-ico-links {
+    @apply lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold;
+  }
+}
+
+@layer components {
+    .white-button {
+      @apply bg-white text-gray-800 active:bg-gray-100 font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3;
+    }
+}
